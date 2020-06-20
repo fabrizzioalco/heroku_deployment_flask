@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random number</title>
+  </head>
+  <body>
+    <h1> Random number generator </h1>
+    <p> Web application for generate a random number</p>
+    <form action="{{ url_for('result_page') }}">
+        <label for="first_number">Pick your first number</label><br>
+        <input type="text" id="first_number" name="first_number"><br>
+        <br>
+        <label for="sec_number"> Pick last number</label><br>
+        <input type="text" id="sec_number" name="sec_number">
+        <br>
+        <br>
+        <input type="submit" value="Generate">
+        <input type="submit" value="Clean">
+    </form>
+
+    <div>
+        <h1>Result: 3</h1>
+
+    </div>
+  </body>
+</html>
